@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import image from './img/pic04.jpg';
+import image2 from './img/pic06.jpg';
+import DynamicImage from './DynamicImage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h1> Hello world</h1>
+    <DynamicImage w='100'  h='100' source={image} />
+    <DynamicImage w='100'  h='100' source={image2} />
+    </> 
   );
 }
-
 export default App;
